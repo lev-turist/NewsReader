@@ -11,8 +11,6 @@ builder.Services.AddDbContext<ApplicationDbContext>(x => x.UseSqlServer(
 
 builder.Services.AddControllers();
 builder.Services.AddScoped<INewsReaderService, NewsReaderServiceRSS>();
-//builder.Services.AddHostedService<ConsumeScopedServiceHostedService>();
-//builder.Services.AddTransient<IScopedProcessingService, ScopedProcessingService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
